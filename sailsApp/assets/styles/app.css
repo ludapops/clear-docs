@@ -1,0 +1,35 @@
+/*homepage==================================================================
+==========================================================================*/
+.butBar{
+	;]
+	text-align: center;
+}
+
+.btnContainer{
+	position: relative;
+	bottom: 20px;
+}
+
+.btnContainer a {
+	margin-right: 10px
+}
+
+.jumboText {
+	font-size: 5em;
+}
+
+
+/*Topics==================================================================
+==========================================================================*/
+
+.topicsUl {
+	background: green;
+}
+
+.remainder {
+	background-color: red;
+}
+
+.questionForm {
+	margin-top: 50px;
+}
