@@ -44,7 +44,11 @@ module.exports.routes = {
   //   view: 'promises'
   // },
 
+  'post /questionAdded': "CategoryController.questionAdded",
   '/:category': 'CategoryController.topiclist',
+  '/:category/:topic/show': "TopicController.show"
+
+
 
   /***************************************************************************
   *                                                                          *

@@ -23,13 +23,39 @@
 ==========================================================================*/
 
 .topicsUl {
-	background: green;
+	/*background: green;*/
+}
+
+.topicsUl ul li {
+	border: 2px solid rgba(0, 0, 0, 0.33); 
+	padding: 10px;
+	border-radius: 4px
+}
+.topicsUl ul :hover {
+	-moz-box-shadow:    3px 3px 5px 6px #ccc;
+  	-webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  	box-shadow:         3px 3px 5px 6px #ccc;
 }
 
 .remainder {
-	background-color: red;
+	/*background-color: red;*/
 }
 
 .questionForm {
 	margin-top: 50px;
+}
+
+
+/*question form ========================================================
+=======================================================================*/
+.formSubject {
+	margin: 15px 10px;
+}
+
+.docsLink {
+	margin: 15px 10px;
+}
+
+.formSubmit {
+	padding: 3px 138px;
 }

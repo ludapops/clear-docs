@@ -6,27 +6,45 @@
 	<div class = "row">
 		<section class= "col-lg-8 topicsUl">
 			<ul>
-				<li><a href="#">like?</a>1 <a href="#">answers</a></li>
-				<li><a href="#">like?</a>2 <a href="#">answers</a></li>
-				<li><a href="#">like?</a>3 <a href="#">answers</a></li>
+				<li><a href="#">like?</a>fsdhofdhoshfdoishfohsofdihsoidhfosihdf fsdhofdhoshfdoishfohsofdihsoidhfosihdf  <a href="/" + <%urlCategory%> +"/" + ":topic/show">answers</a></li>
+				<br>
+				<li><a href="#">like?</a>fsdhofdhoshfdoishfohsofdihsoidhfosihdf fsdhofdhoshfdoishfohsofdihsoidhfosihdf  <a href="/" + <%urlCategory%> +"/" + ":topic/show">answers</a></li>
+				<br>
+				<li><a href="#">like?</a>fsdhofdhoshfdoishfohsofdihsoidhfosihdf fsdhofdhoshfdoishfohsofdihsoidhfosihdf  <a href="/" + <%urlCategory%> +"/" + ":topic/show">answers</a></li>
+				<br>
+				<li><a href="#">like?</a>fsdhofdhoshfdoishfohsofdihsoidhfosihdf fsdhofdhoshfdoishfohsofdihsoidhfosihdf  <a href="/" + <%urlCategory%> +"/" + ":topic/show">answers</a></li>
+				<br>
+				<li><a href="#">like?</a>fsdhofdhoshfdoishfohsofdihsoidhfosihdf fsdhofdhoshfdoishfohsofdihsoidhfosihdf  <a href="/" + <%urlCategory%> +"/" + ":topic/show">answers</a></li>
+				<br>
+				<li><a href="#">like?</a>fsdhofdhoshfdoishfohsofdihsoidhfosihdf fsdhofdhoshfdoishfohsofdihsoidhfosihdf  <a href="/" + <%urlCategory%> +"/" + ":topic/show">answers</a></li>
+				<br>
+				<li><a href="#">like?</a>fsdhofdhoshfdoishfohsofdihsoidhfosihdf fsdhofdhoshfdoishfohsofdihsoidhfosihdf <a href="/" + <%urlCategory%> +"/" + ":topic/show">answers</a></li>
+				<br>
+				<li><a href="#">like?</a>fsdhofdhoshfdoishfohsofdihsoidhfosihdf fsdhofdhoshfdoishfohsofdihsoidhfosihdf <a href="/" + <%urlCategory%> +"/" + ":topic/show">answers</a></li>
+				<br>
 			</ul>
 		</section>
 		<section class ="col-lg-4 remainder">
-			<ul>
+			<!-- <ul>
 				<li><a href="#">like?</a>place <a href="#">answers</a></li>
 				<li><a href="#">like?</a>holdd <a href="#">answers</a></li>
 				<li><a href="#">like?</a>errrr <a href="#">answers</a></li>
-			</ul>
+			</ul> -->
+			<form class= "topicForm" method= "post" action="/questionAdded">
+				<input type="hidden" name="category" value="<%=urlCategory%>" >
+				<input class= "formSubject" type="text" placeholder ="subject of question" name ="subject">
+				<input class= "docsLink" type="text" placeholder ="link to troubling documentation" name ="url">
+				<br>
+				<!-- <input type="textbox" placeholder="whats your problem"> -->
+				<textarea class= "description" cols="50" rows="10" name= "description"></textarea> 
+				<br>
+				<button class= "formSubmit" type="submit" id= "subBtn">Submit</button> 
+			</form>
 		</section>
 	</div>
 	<div class =" text-center questionForm">
 		<section >
-			<form action="">
-				<input type="text" placeholder ="subject of question">
-				<input type="text" placeholder ="link to troublind documentation">
-				<input type="textbox" placeholder="whats your problem">
-				<input type="submit" id= "subBtn">
-			</form>
+			
 		</section>
 
 	</div>
