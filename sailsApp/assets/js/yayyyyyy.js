@@ -20,8 +20,10 @@ promBtn = $("#subBtn").on('click', function(e) {
 
 	// actually using the promise ========================================
 	yay.then(function(value) {
-		$(".topicsUl").append("<li>" + value + "<li>");
+		console.log(value);
+		$(".topList").append("<li>" + value.subject + "</li>");
 		console.log('miricle');
+		$('.topicForm').trigger('reset');
 	}, function(reason) {
 		$(".container").append(reason);
 		console.log("no work");

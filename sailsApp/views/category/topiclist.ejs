@@ -5,8 +5,12 @@
 
 	<div class = "row">
 		<section class= "col-lg-8 topicsUl">
-			<ul>
-				<li><a href="#">like?</a>fsdhofdhoshfdoishfohsofdihsoidhfosihdf fsdhofdhoshfdoishfohsofdihsoidhfosihdf  <a href="/" + <%urlCategory%> +"/" + ":topic/show">answers</a></li>
+			<ul class= "topList">
+
+				<% topics.forEach(function (topic) { %>
+					<li><%=topic.subject%></li>
+				<% }) %>
+				<!-- <li><a href="#">like?</a>fsdhofdhoshfdoishfohsofdihsoidhfosihdf fsdhofdhoshfdoishfohsofdihsoidhfosihdf  <a href="/" + <%urlCategory%> +"/" + ":topic/show">answers</a></li>
 				<br>
 				<li><a href="#">like?</a>fsdhofdhoshfdoishfohsofdihsoidhfosihdf fsdhofdhoshfdoishfohsofdihsoidhfosihdf  <a href="/" + <%urlCategory%> +"/" + ":topic/show">answers</a></li>
 				<br>
@@ -21,7 +25,7 @@
 				<li><a href="#">like?</a>fsdhofdhoshfdoishfohsofdihsoidhfosihdf fsdhofdhoshfdoishfohsofdihsoidhfosihdf <a href="/" + <%urlCategory%> +"/" + ":topic/show">answers</a></li>
 				<br>
 				<li><a href="#">like?</a>fsdhofdhoshfdoishfohsofdihsoidhfosihdf fsdhofdhoshfdoishfohsofdihsoidhfosihdf <a href="/" + <%urlCategory%> +"/" + ":topic/show">answers</a></li>
-				<br>
+				<br> -->
 			</ul>
 		</section>
 		<section class ="col-lg-4 remainder">
@@ -44,7 +48,7 @@
 	</div>
 	<div class =" text-center questionForm">
 		<section >
-			
+
 		</section>
 
 	</div>
