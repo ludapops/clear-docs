@@ -10,13 +10,13 @@
 module.exports = {
 	topicList: function(req, res) {
 		// var category = param('category');
-		var categoryArray = ["angular", "nodejs", "promises", "user tutorials" ];
+		var categoryArray = ["angular", "nodejs", "promises", "userTutorials" ];
 		var category = req.param("category").toLowerCase();
-		
+
 		if (categoryArray.indexOf(category) > -1) {
 
 			Topic.find({category: category},function(err, topics){
-				
+
 				res.view({title: category.toUpperCase(), urlCategory: category, topics: topics});
 
 			})
@@ -47,6 +47,8 @@ module.exports = {
 					"status": "200",
 					"response":"your question about " + topic.subject +"was successfully added",
 					"subject": topic.subject,
+					"id": topic.id,
+					"category": topic.category
 				})
 			}
 		})
