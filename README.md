@@ -1,2 +1,3 @@
-# clear-docs
-Crowd sourced documentation questions. 
+# sailsApp
+
+a [Sails](http://sailsjs.org) application
