@@ -38,6 +38,15 @@ promBtn = $("#subBtn").on('click', function(e) {
 	console.log("yaaaaaay")
 })
 
+$(document).ready(function(){
+	$('.pewpew').each(function(i, code) {
+		code.innerHTML =marked(code.innerHTML);
+		hljs.highlightBlock(code);
+	});
+});
+
+
+
 
 // p.then(function(value) {
 //    // fulfillment

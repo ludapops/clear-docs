@@ -22,7 +22,8 @@ module.exports = {
 					description: topic.description,
 					answers: topic.answers,
 					topic: question,
-					category: topic.category
+					category: topic.category,
+					url: topic.url
 				};
 				res.view(viewData)
 

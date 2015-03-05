@@ -1,9 +1,14 @@
 <main class = " container">
+	<ul class="nav nav-tabs row">
+	  <li role="presentation" class="active"><a href="/">Home</a></li>
+	  <li role="presentation"><a href="#">Profile</a></li>
+	  <li role="presentation"><a href="#">Messages</a></li>
+	</ul>
 	<div class="jumbotron text-center row jumboText categoryHead">
 		<h1><%= title %></h1>
 	</div>
 
-	<div class = "row">
+	<div >
 		<section class= "col-lg-8 topicsUl">
 			<ul class= "topList">
 
@@ -34,16 +39,46 @@
 				<li><a href="#">like?</a>holdd <a href="#">answers</a></li>
 				<li><a href="#">like?</a>errrr <a href="#">answers</a></li>
 			</ul> -->
-			<form class= "topicForm" method= "post" action="/questionAdded">
+			<form class="form-horizontal topicForm" method= "post" action="/questionAdded">
+			  <input type="hidden" name="category" value="<%=urlCategory%>" >
+			  <div class="form-group">
+			    <!-- <label for="subject" class="col-sm-2 control-label">question's subject</label> -->
+			    <div class="col-sm-10">
+			      <input type="text" class="form-control" id="subject" placeholder="subject" name ="subject">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <!-- <label for="linkToDocs" class="col-sm-2 control-label">url</label> -->
+			    <div class="col-sm-10">
+			      <input type="url" class="form-control" id="linkToDocs" placeholder="link to docs" name ="url">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <!-- <label for="description" class="col-sm-2 control-label">question goes here</label> -->
+			    <div class="col-sm-10">
+			      <textarea class = "form control descriptionText"name = "description" id ="description" placeholder="your question goes here"></textarea>
+			      <!-- <input type="url" class="form-control" id="description" placeholder="describe your question" name= "description"> -->
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <div class="col-sm-offset-2 col-sm-10">
+			      <button type="submit" class="btn btn-primary topSubBtn " id="subBtn">Submit</button>
+			    </div>
+			  </div>
+		    </form>
+
+
+
+		<!-- 	<form class= "topicForm" method= "post" action="/questionAdded">
 				<input type="hidden" name="category" value="<%=urlCategory%>" >
 				<input class= "formSubject" type="text" placeholder ="subject of question" name ="subject">
 				<input class= "docsLink" type="text" placeholder ="link to troubling documentation" name ="url">
-				<br>
+				<br> -->
 				<!-- <input type="textbox" placeholder="whats your problem"> -->
-				<textarea class= "description" cols="50" rows="10" name= "description"></textarea> 
+			<!-- 	<textarea class= "description" cols="50" rows="10" name= "description"></textarea> 
 				<br>
 				<button class= "formSubmit" type="submit" id= "subBtn">Submit</button> 
-			</form>
+			</form> -->
 		</section>
 	</div>
 	<div class =" text-center questionForm">
