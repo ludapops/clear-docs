@@ -45,8 +45,9 @@ module.exports.routes = {
   // },
 
   'post /questionAdded': "CategoryController.questionAdded",
+  'post /:topic/answerAdded': "TopicController.create",
   '/:category': 'CategoryController.topiclist',
-  '/:category/:topic/show': "TopicController.show"
+  '/:category/:topic/show': "TopicController.show",
 
 
 

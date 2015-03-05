@@ -15,9 +15,19 @@
 // (if you're using LESS with the built-in default config, you'll want
 //  to change `assets/styles/importer.less` instead.)
 var cssFilesToInject = [
-  'styles/**/*.css'
+  'styles/bootstrap-responsive.css',
+  'styles/bootstrap-theme.css',
+  'styles/bootstrap.css',
+  'styles/importer.css',
+  'styles/zapp.css'
 ];
 
+   // <link rel="stylesheet" href="/styles/bootstrap-responsive.css">
+   //  <link rel="stylesheet" href="/styles/bootstrap-theme.css">
+   //  <link rel="stylesheet" href="/styles/bootstrap.css">
+   //  <link rel="stylesheet" href="/styles/importer.css">
+   //  
+   //  <link rel="stylesheet" href="/styles/zapp.css">
 
 // Client-side javascript files to inject in order
 // (uses Grunt-style wildcard/glob/splat expressions)

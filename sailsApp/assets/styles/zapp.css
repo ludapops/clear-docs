@@ -1,0 +1,132 @@
+body{
+	background-color: rgba(15, 219, 219, 0.13);
+	font-family: 'Pompiere', cursive;
+}
+/*homepage==================================================================
+==========================================================================*/
+.butBar{
+	;]
+	text-align: center;
+}
+
+.btnContainer{
+	position: relative;
+	bottom: 20px;
+}
+
+.btnContainer a {
+	margin-right: 10px
+}
+
+.jumboText.jumbotron {
+	font-size: 13em;
+	background-color: rgba(0, 163, 255, 0.84);
+	color: #fff;
+}
+
+.jumboText img{
+	position: relative;
+	bottom: 35px;
+
+}
+.buttonDivide.col-sm-3{
+	border: 2px solid rgba(0, 0, 0, 0.33);
+	padding: 130px 15px 130px 15px;
+	margin: 5px 5px;
+	border-radius: 5px;
+	width: 24%;
+	color: white;
+	font-size: 1.5em;
+
+}
+
+.topicBtn{
+	font-size: 1.7em;
+}
+
+.topicBtn:hover {
+	background-color: rgb(255, 198, 18);
+}
+
+.buttonDivide a {
+	position: relative;
+	top: 90px;
+
+}
+
+.divDifColor1{
+	background-color: rgb(85, 96, 223) ;
+}
+.divDifColor2{
+	background-color: rgb(85, 170, 85);
+}
+.divDifColor3{
+	background-color: rgb(221, 118, 78);
+}
+.divDifColor4{
+	background-color: rgb(111, 73, 111);
+}
+
+
+/*Topics==================================================================
+==========================================================================*/
+
+.jumboText.jumbotron.categoryHead{
+	font-size: 17em;
+}
+
+.topicsUl {
+	/*background: green;*/
+}
+
+.topicsUl ul li {
+	border: 2px solid rgba(0, 0, 0, 0.33); 
+	padding: 10px;
+	border-radius: 4px
+}
+.topicsUl ul :hover {
+	-moz-box-shadow:    3px 3px 5px 6px #ccc;
+  	-webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  	box-shadow:         3px 3px 5px 6px #ccc;
+}
+
+.remainder {
+	/*background-color: red;*/
+}
+
+.questionForm {
+	margin-top: 50px;
+}
+
+
+/*question form ========================================================
+=======================================================================*/
+.formSubject {
+	margin: 15px 10px;
+}
+
+.docsLink {
+	margin: 15px 10px;
+}
+
+.formSubmit {
+	padding: 3px 138px;
+}
+
+/*Answer Page====================================
+===============================================*/
+
+.fiddle{
+	width:100%;
+}
+
+/*.answerListItem {
+	border: 2px solid rgba(0, 0, 0, 0.33);
+	border-radius: 4px;
+	padding: 15px;
+	margin: 10px 0px;
+}
+
+.answerList{
+
+}*/

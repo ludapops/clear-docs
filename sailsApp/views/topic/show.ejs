@@ -1,5 +1,52 @@
 <main class="container">
 	<div class="jumbotron text-center row jumboText">
-		<h1><%= question %></h1>
+		<h1>
+			<%= title %>
+			
+		</h1>
+	</div>
+
+	<div>
+	  <div>
+	  	<p><%=description%></p>
+	  	<ul class="answerList list-group">
+	  		<%answers.forEach(function(answer)
+  		  		{ %>
+  		  		<li class="answerListItem list-group-item"><%=answer.answerText%></li>
+  	
+  		  		<% })%>
+	  	</ul>
+	  </div>
+	  <p>Have a soulution?</p>
+		  <div>
+		  	<form action= "/<%=topic %>/answerAdded" method="post">
+			  <div class="form-group">
+	  		  	<textarea class= "form-control" name="answer" id="answerArea" cols="50" rows="10"></textarea>
+	  		  	<input class= "form-control" type="hidden" name="category" value="<%=category%>">
+
+			  </div>
+
+			  	<button type="submit" class="btn btn-default js-hook-submit">Submit</button>
+			</form>
+
+
+
+
+		  	<!-- <form action= "/<%=topic %>/answerAdded" method="post">
+	  		  	<br>
+	  		  	<button class="js-hook-submit" type="submit">
+	  				submit
+	  		  	</button>
+	  		  </form> -->
+		  	</div>
+	<div>
+
+	</div>
+		<!-- <p data-height="268" data-theme-id="0" data-slug-hash="ClnAe" data-user="afkatja" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/chriscoyier/pen/ClnAe'>ClnAe</a> by Katja Hollar (<a href='http://codepen.io/afkatja'>@afkatja</a>) on <a href='http://codepen.io'>CodePen</a></p> -->
+
+
+		<!-- fidddle+++++++++++++++++++++++ -->
+		<!-- <iframe class="lg-col-12 fiddle" src="http://jsfiddle.net/" frameborder="0"></iframe> -->
+
 	</div>
 </main>

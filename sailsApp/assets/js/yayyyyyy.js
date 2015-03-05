@@ -44,3 +44,11 @@ promBtn = $("#subBtn").on('click', function(e) {
 //   }, function(reason) {
 //   // rejection
 // });
+
+
+
+// +++++++++++++Answer Added ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// $('.js-hook-submit').onClick(function(e) {
+// 	e.preventDefault();
+// 	$('.answerListItem').append()
+// })

@@ -50,7 +50,13 @@ module.exports = {
   	category: {
   		type: "string",
   		required: true
-  	}
+  	},
+
+    answers: {
+      collection: 'answer',
+      via: 'topic'
+
+    }
 
 
   }
