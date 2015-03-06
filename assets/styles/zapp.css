@@ -1,7 +1,8 @@
-body{
+html body{
 	background-color: rgba(15, 219, 219, 0.13);
 	font-family: 'Pompiere', cursive;
-	/*font-size: 2em;*/
+	font-size: 16px;
+	
 }
 /*homepage==================================================================
 ==========================================================================*/
@@ -30,14 +31,15 @@ body{
 	bottom: 35px;
 
 }
-.buttonDivide.col-sm-3{
+.buttonDivide{
 	border: 2px solid rgba(0, 0, 0, 0.33);
-	padding: 130px 15px 130px 15px;
+	padding: 3% 15px 130px 15px;
 	margin: 5px 5px;
 	border-radius: 5px;
 	width: 24%;
 	color: white;
 	font-size: 1.5em;
+	height: 575px;
 
 }
 
@@ -50,9 +52,8 @@ body{
 }
 
 .buttonDivide a {
-	position: relative;
-	top: 90px;
-
+	position: absolute;
+	bottom: 15%;
 }
 
 .divDifColor1{
