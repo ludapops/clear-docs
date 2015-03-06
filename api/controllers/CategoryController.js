@@ -10,7 +10,7 @@
 module.exports = {
 	topicList: function(req, res) {
 		// var category = param('category');
-		var categoryArray = ["angular", "nodejs", "promises", "userTutorials" ];
+		var categoryArray = ["angular", "nodejs", "promises", "usertopics" ];
 		var category = req.param("category").toLowerCase();
 
 		if (categoryArray.indexOf(category) > -1) {
@@ -20,6 +20,8 @@ module.exports = {
 				res.view({title: category.toUpperCase(), urlCategory: category, topics: topics});
 
 			})
+		} else {
+			res.notFound();
 		}
 		// console.log(category);
 		// res.send("Congratulations you get to kick off our " + category + "section." );
