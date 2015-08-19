@@ -1,3 +1,1 @@
-# sailsApp
-
-a [Sails](http://sailsjs.org) application
+With this project I attempted to make a platform for aspiring developers that need clarification with confusing documentation. Developers can post questions they have about confusing documentation and receive feedback from their fellow peers. 
